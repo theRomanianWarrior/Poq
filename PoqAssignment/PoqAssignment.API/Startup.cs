@@ -58,11 +58,15 @@ namespace PoqAssignment.API
                 httpClient.BaseAddress = new Uri(mockySettings.BaseUrl);
             });
 
-            // Initialize the MockyApiClient singleton
-            var serviceProvider = services.BuildServiceProvider();
-            var httpClientFactory = serviceProvider.GetRequiredService<IHttpClientFactory>();
-            var mockyApiSettings = serviceProvider.GetRequiredService<IOptions<MockySettings>>();
-            MockyApiClient.Initialize(httpClientFactory, mockyApiSettings);
+            services.AddSingleton(provider =>
+            {
+                var httpClientFactory = provider.GetRequiredService<IHttpClientFactory>();
+                var mockyApiSettings = provider.GetRequiredService<IOptions<MockySettings>>();
+        
+                MockyApiClient.Initialize(httpClientFactory, mockyApiSettings);
+        
+                return MockyApiClient.Instance;
+            });
 
             var settings = Configuration.GetSection(nameof(SwaggerSettings)).Get<SwaggerSettings>();
 

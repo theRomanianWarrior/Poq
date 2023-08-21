@@ -8,17 +8,19 @@ namespace PoqAssignment.Infrastructure.Repositories
     {
         private readonly ILogger<MockyProductsRepository> _logger;
         private readonly ISerializationService _serializationService;
+        private readonly MockyApiClient _mockyApiClient;
 
         public MockyProductsRepository(ILogger<MockyProductsRepository> logger,
-            ISerializationService serializationService)
+            ISerializationService serializationService, MockyApiClient mockyApiClient)
         {
             _logger = logger;
             _serializationService = serializationService;
+            _mockyApiClient = mockyApiClient;
         }
 
         public Mocky GetAll()
         {
-            var result = MockyApiClient.Instance.GetMockyProducts();
+            var result = _mockyApiClient.GetMockyProducts();
             var serializedResponse = _serializationService.Serialize(result);
 
             _logger.LogInformation(serializedResponse);
