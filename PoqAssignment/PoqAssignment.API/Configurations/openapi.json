@@ -1,0 +1,7 @@
+{
+  "SwaggerSettings": {
+    "Title": "Poq Backend Tech Assessment",
+    "Version": "v1",
+    "Description": "Retrieving data from mocky.io, filtering them and adding some statistics."
+  }
+}
