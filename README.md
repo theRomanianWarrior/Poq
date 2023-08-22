@@ -150,7 +150,7 @@ When a client sends an HTTP request to the API, the following steps outline the 
 
 This flow is visualized in the diagram below:
 
-![Request Processing Flow](GetAllFlowDiagram.jpg)
+![Request Processing Flow](Documentation/GetAllFlowDiagram.jpg)
 
 ## Mocky Products Repository and Mocky Api Client
 
@@ -187,7 +187,7 @@ The Mocky Api Client is a Singleton instance instantiated from middleware. Its p
 
 This functionality is visualized in the diagram below:
 
-![Mocky Api Client Functionality](RepoAndApiClient.jpg)
+![Mocky Api Client Functionality](Documentation/RepoAndApiClient.jpg)
 
 ## Filters Service
 
@@ -214,7 +214,7 @@ The "Filters Service" plays a vital role in handling user input from the URL que
 
 This functionality is visualized in the diagram below:
 
-![Filters Service Functionality](FiltersService.jpg)
+![Filters Service Functionality](Documentation/FiltersService.jpg)
 
 ## Products Statistics Service
 
@@ -241,4 +241,4 @@ The "Products Statistics Service" is responsible for generating statistics based
 
 This functionality is visualized in the diagram below:
 
-<img src="ProductsStatisticsService.jpg" alt="Products Statistics Service Functionality" width="400">
+<img src="Documentation/ProductsStatisticsService.jpg" alt="Products Statistics Service Functionality" width="400">
