@@ -11,6 +11,6 @@ namespace PoqAssignment.Domain.Builders.Interfaces
         IProductsStatisticsBuilder WithMaxPrice();
         IProductsStatisticsBuilder WithSizes();
         IProductsStatisticsBuilder WithCommonWords();
-        ProductFilter Build();
+        ProductsStatistics Build();
     }
 }

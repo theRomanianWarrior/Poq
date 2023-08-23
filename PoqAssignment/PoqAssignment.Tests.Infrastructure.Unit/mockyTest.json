@@ -1,0 +1,7 @@
+﻿{
+  "MockySettings": {
+    "BaseUrl": "http://www.mocky.io",
+    "GetAllMockyProductsUrl": "/v2/5e307edf3200005d00858b49",
+    "MockyApiClient": "MockyApiClient"
+  }
+}

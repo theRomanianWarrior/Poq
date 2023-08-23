@@ -8,6 +8,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoqAssignment.Infrastructur
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoqAssignment.Domain", "PoqAssignment.Domain\PoqAssignment.Domain.csproj", "{68E06143-6A6C-45CF-80FA-377FA5919683}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F79BB7D8-A85D-4746-899B-BCC876E169F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{22C96FB1-85F8-4659-8FA1-3FACCD24D05A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoqAssignment.Tests.Application.Unit", "PoqAssignment.Tests.Application.Unit\PoqAssignment.Tests.Application.Unit.csproj", "{0721BB13-B4F2-431B-80AB-E66F39D94B44}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{98BD41DC-76A4-4CCA-9091-BD08780DD1C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoqAssignment.Tests.Infrastructure.Unit", "PoqAssignment.Tests.Infrastructure.Unit\PoqAssignment.Tests.Infrastructure.Unit.csproj", "{03C5E1AE-9448-4CD8-A09A-4F8F9973F11D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +40,19 @@ Global
 		{68E06143-6A6C-45CF-80FA-377FA5919683}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68E06143-6A6C-45CF-80FA-377FA5919683}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68E06143-6A6C-45CF-80FA-377FA5919683}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0721BB13-B4F2-431B-80AB-E66F39D94B44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0721BB13-B4F2-431B-80AB-E66F39D94B44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0721BB13-B4F2-431B-80AB-E66F39D94B44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0721BB13-B4F2-431B-80AB-E66F39D94B44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03C5E1AE-9448-4CD8-A09A-4F8F9973F11D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03C5E1AE-9448-4CD8-A09A-4F8F9973F11D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03C5E1AE-9448-4CD8-A09A-4F8F9973F11D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03C5E1AE-9448-4CD8-A09A-4F8F9973F11D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{22C96FB1-85F8-4659-8FA1-3FACCD24D05A} = {F79BB7D8-A85D-4746-899B-BCC876E169F7}
+		{0721BB13-B4F2-431B-80AB-E66F39D94B44} = {22C96FB1-85F8-4659-8FA1-3FACCD24D05A}
+		{98BD41DC-76A4-4CCA-9091-BD08780DD1C2} = {F79BB7D8-A85D-4746-899B-BCC876E169F7}
+		{03C5E1AE-9448-4CD8-A09A-4F8F9973F11D} = {98BD41DC-76A4-4CCA-9091-BD08780DD1C2}
 	EndGlobalSection
 EndGlobal

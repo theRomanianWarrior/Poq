@@ -9,7 +9,7 @@ namespace PoqAssignment.Domain.Builders
 {
     public class ProductsStatisticsBuilder : IProductsStatisticsBuilder
     {
-        private readonly ProductFilter _filter = new ProductFilter();
+        private readonly ProductsStatistics _filter = new ProductsStatistics();
         private List<Product> _products;
 
         public void SetProducts(IEnumerable<Product> products)
@@ -56,7 +56,7 @@ namespace PoqAssignment.Domain.Builders
             return this;
         }
 
-        public ProductFilter Build()
+        public ProductsStatistics Build()
         {
             return _filter;
         }

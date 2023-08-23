@@ -2,9 +2,9 @@
 
 namespace PoqAssignment.Domain.Models
 {
-    public class ProductFilter
+    public class ProductsStatistics
     {
-        public ProductFilter()
+        public ProductsStatistics()
         {
             Sizes = new List<string>();
             CommonWords = new string[10];

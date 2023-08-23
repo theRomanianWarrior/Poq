@@ -15,7 +15,7 @@ namespace PoqAssignment.Domain.Builders
             ProductsStatisticsBuilder.SetProducts(products);
         }
 
-        public ProductFilter BuildProductsStatistics()
+        public ProductsStatistics BuildProductsStatistics()
         {
             return ProductsStatisticsBuilder.WithMinPrice()
                 .WithMaxPrice()

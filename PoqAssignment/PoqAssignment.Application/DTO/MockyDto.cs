@@ -6,13 +6,13 @@ namespace PoqAssignment.Application.DTO
 {
     public class MockyDto
     {
-        public MockyDto(IEnumerable<ProductDto> products, ProductFilter filter)
+        public MockyDto(IEnumerable<ProductDto> products, ProductsStatistics filter)
         {
             Products = products.ToList();
             Filter = filter;
         }
 
         public IEnumerable<ProductDto> Products { get; set; }
-        public ProductFilter Filter { get; set; }
+        public ProductsStatistics Filter { get; set; }
     }
 }
