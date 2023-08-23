@@ -39,8 +39,8 @@ This endpoint allows you to filter items based on various criteria.
 
 #### Endpoint
 
-- **Route 1**: `POST /filter`
-- **Route 2**: `POST /`
+- **Route 1**: `POST: /filter`
+
 
 Both routes can be used to get products.
 
