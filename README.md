@@ -4,7 +4,7 @@ This API retrieves products data from mocky.io, then applies to them some client
 
 ## Technologies Used
 
-This  API leverages a variety of technologies to deliver its functionality efficiently and effectively:
+This API leverages a variety of technologies to deliver its functionality efficiently and effectively:
 
 - **Mocky.io**: An external API serving as a data source for mock product information. It plays a crucial role in retrieving product data for our API.
 
@@ -14,7 +14,15 @@ This  API leverages a variety of technologies to deliver its functionality effic
 
 - **AutoMapper**: A versatile mapping library that streamlines the process of converting data between different models. AutoMapper aids us in efficiently transforming data between our internal representations and the responses sent to clients.
 
-These technologies collectively contribute to the reliability, maintainability, and performance of our API.
+- **Xunit**: A popular testing framework used for unit testing our API's components. Xunit provides a structured and organized approach to testing, ensuring the reliability and correctness of our code.
+
+- **NSubstitute**: A mocking library used for creating mock objects in unit tests. NSubstitute allows us to isolate components and test their behavior without relying on external dependencies.
+
+- **FluentAssertions**: A fluent assertion library that enhances the readability of test assertions. FluentAssertions simplifies the creation of assertions and provides clear failure messages.
+
+- **AutoFixture**: A library used for generating test data in a convenient and repeatable manner. AutoFixture helps streamline the process of creating test cases by automatically generating sample data.
+
+These technologies collectively contribute to the reliability, maintainability, and performance of our API. They also ensure that our code is thoroughly tested and meets the specified requirements.
 
 ## Getting Started:
 To compile and run the ASP.NET Core Web API, you'll need the minimum necessary tools to build and execute the code.

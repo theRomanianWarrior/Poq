@@ -38,14 +38,14 @@ namespace PoqAssignment.Application.Services
                 var userFilter = _mapper.Map<UserFilter>(filter);
 
                 _filtersService.CreateFiltersOptionsChain(userFilter);
-                var filteredProducts = _filtersService.ApplyFiltersOptions(allProducts.Products).ToList();
+                var filteredProducts = _filtersService.ApplyFiltersOptions(allProducts.Products.ToList()).ToList();
                 _logger.LogInformation("User filters applied successfully.");
 
                 productsAfterApplyingStats = _productsStatisticsService.ApplyProductsStatistics(filteredProducts);
             }
             else
             {
-                productsAfterApplyingStats = _productsStatisticsService.ApplyProductsStatistics(allProducts.Products);
+                productsAfterApplyingStats = _productsStatisticsService.ApplyProductsStatistics(allProducts.Products.ToList());
             }
 
             return productsAfterApplyingStats;

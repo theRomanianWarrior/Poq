@@ -22,7 +22,6 @@ namespace PoqAssignment.API.Controllers
         }
 
         [HttpPost("filter")]
-        [HttpPost]
         [SwaggerOperation(Summary = "Retrieve all products",
             Description = "This endpoint retrieves all products from mocky.io")]
         public IActionResult GetAll([FromQuery] FilterByUser filter = null)
